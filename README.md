@@ -19,3 +19,24 @@ A robust Django web application featuring a product CRUD system, student/employe
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/](https://github.com/)[YourUsername]/[YourRepoName].git
+
+2. create virtual environment 
+Python -m venv venv
+source venv/bin activate #on
+windows: venv/Scripts/activate
+
+3. Install requirements 
+**
+pip Install -r requirements.txt
+**
+
+4. Run migrations
+**
+Python manage.py make migrations
+Python manage.py migrate
+**
+
+5. Start the server
+**
+Python manage.py runserver
+**
