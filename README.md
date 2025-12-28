@@ -18,7 +18,7 @@ A robust Django web application featuring a product CRUD system, student/employe
 ## 📋 How to Install and Run
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)[YourUsername]/[YourRepoName].git
+   git clone https://github.com/mk567/django-code
 
 2. create virtual environment 
 Python -m venv venv
@@ -33,10 +33,11 @@ pip Install -r requirements.txt
 4. Run migrations
 **
 Python manage.py make migrations
+
 Python manage.py migrate
 **
 
-5. Start the server
+6. Start the server
 **
 Python manage.py runserver
 **
