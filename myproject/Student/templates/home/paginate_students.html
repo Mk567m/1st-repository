@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Report</title>
+</head>
+<body>
+  <style>
+    #search{
+      padding: 12px;
+      margin-top: 15px;
+      width: 300px;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 13px;
+      border: 1px solid black;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <form enctype="multipart/form-data">
+
+    <input id="search" type="text" name="search" placeholder="Search by Name, Department or Address">
+    <input type="submit" value="Search">
+
+
+  </form>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+
+</head>
+<body>
+  <style>
+    table{
+      
+      width: 80%;
+      margin-bottom: 20px;
+      align-self: center;
+      
+    }
+    .headers{
+      background-color: rgb(93, 42, 214);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: large;
+      padding: 12px;
+      height: 45px;
+      margin: 15px;
+
+    }
+    #table{
+      border: 1.2px solid black;
+      width: 100%;
+    }
+    td{
+      text-align: center;
+      padding: 10px;
+      font-size: large;
+      height: 35px;
+      border-bottom: 1px solid black;
+    }
+  </style>
+
+  {% for student in Students %}
+    <div id="table">
+    <table>
+            <tr class="headers">
+                <th>Student ID</th>
+                <th>Department</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Subject</th>
+                <th>Address</th>
+            </tr>
+            <tr class="data">
+                <td>{{forloop.counter}}</td>
+                <td><a href="{% url 'see_marks' 'studentid' %}">{{student.student_id.studentid}}</a></td>
+                <td>{{student.department.department_name}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.age}}</td>
+                <td>{{student.address}}</td>
+            </tr>
+            
+    {% endfor %}
+    
+      </table>
+      </div>
+
+</body>
+</html>
+
+    <div>
+          
+          <a href="?page={{Students.previous_page_number}}"> previous page </a>
+          <a href="?page={{Students.next_page_number}}">Next page >></a>
+          
+
+          <h2 align="center">TOTAL PAGES: {{Students.number}} of {{Students.paginator.num_pages}}</h2></span>
+        </div>
+
+</body>
+</html>
+

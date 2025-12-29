@@ -1,0 +1,77 @@
+body{
+  background-color: rgb(133, 92, 168);
+}
+
+#name{
+  display: inline;
+  width: 350px;
+  border-radius:10px;
+  height: 45px;
+  border: 6px solid rgb(204, 174, 174);
+  font-size: large;
+}
+#email{
+  display: inline;
+  width: 350px;
+  height: 45px;
+  border-radius:10px;
+  border: 4px solid rgb(211, 173, 173);  
+  font-size: large;
+}
+#address{
+  display: inline;
+  width: 350px;
+  height: 45px;
+  border-radius:10px;
+  border: 4px solid rgb(203, 177, 177);
+  font-size: large;
+}
+#salary{
+  display: inline;
+  width: 350px;
+  height: 45px;
+  border-radius:10px;
+  border: 4px solid rgb(212, 188, 188);
+  font-size: large;
+}
+#experience{
+  display: inline;
+  width: 350px;
+  border-radius:10px;
+  height: 45px;
+  border: 4px solid rgb(188, 165, 165);
+  font-size: large;
+}
+#job{
+  display: inline;
+  width: 350px;
+  border-radius:10px;
+  height: 45px;
+  border: 4px solid rgb(193, 165, 165);
+  font-size: large;
+}
+button{
+  width:400px;
+  height: 70px;
+  font-size: x-large;
+  
+  border-radius: 14px;
+  font-weight: 600;
+  border: 6px solid ;
+  color: white;
+  margin-left: 20%;
+  background-color: rgb(3, 146, 3);
+
+}
+form{
+  display: block;
+  padding: 20px;
+  
+  justify-self: center;
+  align-self: center;
+}
+
+
+label{
+  font-size: x-large;
+}
