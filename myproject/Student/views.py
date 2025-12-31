@@ -4,7 +4,7 @@ from Student.models import *
 from django.contrib.auth import login,authenticate,logout
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-import os,time 
+import os,time
 from django.contrib import messages
 from django.db.models import Q
 
