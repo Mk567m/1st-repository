@@ -20,10 +20,12 @@ A robust Django web application featuring a product CRUD system, student/employe
    ```bash
    git clone https://github.com/mk567/Django_projects
 
-2. create virtual environment 
+2.Install python/django and create virtual environment:
+pip install django
 Python -m venv venv
 source venv/bin activate #on
 windows: venv/Scripts/activate
+
 
 3. Install requirements 
 **
